@@ -51,7 +51,7 @@ def main():
                 val_loss.append(criterion(output, target).data.cpu().numpy())
             print("Epoch", epoch, "- Validation Loss:", np.mean(val_loss))
 
-        if epoch % 50 == 0:
+        if (epoch+1) % 50 == 0:
             state = {'model_weights': model.state_dict()}
             torch.save(state, "checkpoints/after_{0}_epochs.model".format(epoch))
 

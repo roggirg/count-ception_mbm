@@ -68,7 +68,7 @@ framesize = int(600/scale)
 framesize_h = framesize_w = framesize
 patch_size = 32
 ef = ((patch_size/1)**2.0)
-data_dir = '/home/rogerg/Documents/datasets/MBM/MBM_data'
+data_dir = '/PATH_TO/MBM/MBM_data'
 datasetfilename = "MBM-dataset.pkl"
 
 for filename in glob.iglob(data_dir + '/*dots*.png'):
